@@ -9,7 +9,7 @@
 ---
 
 ## Tentang Project
-Project ini menyulap mikrokontroler mungil (ESP32-C3 Super Mini) dan layar OLED 0.96 inch menjadi gantungan resleting tas digital yang bisa memutar video animasi (seperti lirik lagu *Radiohead - Let Down*). Karena mikrokontroler tidak bisa memutar file `.mp4` secara langsung, project ini menggunakan *pipeline* konversi di komputer (Python) untuk mengubah video menjadi barisan kode *Hexadecimal* (Byte Array), lalu menyimpannya di memori Flash ESP32 untuk diputar bagaikan buku *flipbook* digital yang sangat cepat.
+Project ini menyulap mikrokontroler mungil (ESP32-C3 Super Mini) dan layar OLED 0.96 inch menjadi gantungan resleting tas digital yang bisa memutar video animasi. Karena mikrokontroler tidak bisa memutar file `.mp4` secara langsung, project ini menggunakan *pipeline* konversi di komputer (Python) untuk mengubah video menjadi barisan kode *Hexadecimal* (Byte Array), lalu menyimpannya di memori Flash ESP32 untuk diputar bagaikan buku *flipbook* digital yang sangat cepat.
 
 ### Fitur Utama
 
@@ -42,13 +42,6 @@ Sebelum menjalankan sistem ini, pastikan Anda memiliki:
 4.  Video *source* dalam format `.mp4` (disarankan durasi maksimal 30-60 detik agar muat di memori ESP32).
 
 ---
-
-## Cara Penggunaan (How to Run)
-
-Ikuti langkah-langkah berikut:
-
-### Langkah 1: Extract Video ke Kode C++ (Python)
-Siapkan video Anda (misal: `video_30detik.mp4`) dan taruh di folder yang sama dengan file `convert.py`. Buka `convert.py` dan sesuaikan nama videonya:
 
 ```python
 video_path = 'video_30detik.mp4' # Ganti dengan nama file videomu
